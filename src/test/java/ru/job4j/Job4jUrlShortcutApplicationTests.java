@@ -9,5 +9,4 @@ class Job4jUrlShortcutApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
