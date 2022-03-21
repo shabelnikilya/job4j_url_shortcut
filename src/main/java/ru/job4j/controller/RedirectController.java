@@ -31,7 +31,6 @@ public class RedirectController {
     public ResponseEntity<String> redirect(@NotNull @PathVariable String uniqueCode) {
         Url findUrl = service.findByUniqueCode(uniqueCode);
         if (findUrl == null) {
-            System.out.println("111111111111111111111111");
             throw new ResponseStatusException(
                     HttpStatus.NOT_FOUND, "There is no url with this unique code"
             );
